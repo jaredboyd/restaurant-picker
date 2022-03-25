@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html, body {
+  font-family: 'Fira Sans', sans-serif;
+  line-height: 1.4;
+  color: #fff;
+}
+
+.container {
+  background-color: lightseagreen;
+  padding: 20px;
+  padding-top: 200px;
+  height: 100vh;
+  text-align: center;
+  width: 70%;
+  margin: 0 auto;
+  overflow: auto;
+}
+
+#tiles {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-top: 10px;
+  margin-top: 10px;
+  overflow-wrap: break-word;
+}
+
+.tile {
+  position: relative;
+  background-color: rgb(135, 206, 235);
+  border-radius: 15px;
+  height: 150px;
+  width: 150px;
+  align-items: center;
+  padding-top: 60px;
+  margin-top: 10px;
+  transition: background-color .1s;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.tile a {
+  color: #000;
+  position: absolute;
+  top: 2px;
+  right: 10px; 
+  font-size: 1.7em;
+  text-decoration: none;
+  padding: 5px;
+  margin: -5px;
+}
+
+.tile:hover {
+  background-color: rgb(102, 160, 196);
+}
+
+.textButtonContainer {
+  padding-top: 15px;
+}
+
+#textInput {
+  margin-right: -6px;
+  padding: 5px;
+  border-radius: 10px 0px 0px 10px;
+}
+
+#addButton {
+  padding: 5px;
+  border-radius: 0px 10px 10px 0px;
+  background-color: orange;
+}
+
+#makeChoiceButton {
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 200px;
+  background-color: lightgreen;
+}
+
+#makeChoiceButton:disabled {
+  background-color: lightgrey;
+}
+
+#displayChosen {
+  z-index: 1;
+  display: none;
+  position: fixed;
+  height: 100vh;
+  width: 100%;
+  background: rgba(0, 0, 0, .75);
+}
+
+#displayChosenTile {
+  display: flex;
+  justify-content: center;
+  position: relative;
+  background-color: darkgoldenrod;
+  height: 200px;
+  width: 200px;
+  top: 50%;
+  left: 50%;
+  margin-top: -100px;
+  margin-left: -100px;
+  align-items: center;
+  text-align: center;
+  border-radius: 20px;
+  font-size: 1.33em;
+  box-shadow: rgba(0, 0, 0, 0.45) 4px 4px 5px;
+
+}
+
+#displayChosenTile a {
+  color: #000;
+  position: absolute;
+  top: 2px;
+  right: 10px; 
+  font-size: 1.7em;
+  text-decoration: none;
+  padding: 5px;
+  margin: -5px;
+}
+
+#foot {
+  text-decoration: none;
+  color: #fff;
+}
+
+@media(min-width: 1440px) {
+  .container {
+    padding-top: 200px;
+    width: 70%;
+  }
+}
+
+@media(max-width: 960px) {
+  .container {
+    padding-top: 100px;
+    width: 85%;
+  }
+}
+
+@media(max-width: 768px) {
+  .container {
+    padding-top: 30px;
+    width: 100%;
+  }
+}

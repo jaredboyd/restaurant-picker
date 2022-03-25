@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Restaurant Picker</title>
+</head>
+<body>
+  <div id="displayChosen">
+    <div id="displayChosenTile"></div>
+  </div>
+  <div class="container">
+    <form onsubmit="return addItem()" autocomplete="off">
+      <label for="choice">Enter a your restaurant options, and we'll choose one for you</label>
+      <div class="textButtonContainer">
+        <input id="textInput" type="text" id="choice" placeholder="Enter restaurant choice..." name="choice" minlength="1" maxlength="20">
+        <input id="addButton" type="submit" value="+ Add">
+      </div>
+      <button id="makeChoiceButton" type="button" onclick="makeChoice()" disabled>Pick one!</button>
+    </form>
+
+    <ul id="tiles">
+    </ul>
+
+    <a href="#" id="foot">Or we can choose somewhere close by</a>
+
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
