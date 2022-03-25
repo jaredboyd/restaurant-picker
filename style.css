@@ -69,12 +69,14 @@ html, body {
   margin-right: -6px;
   padding: 5px;
   border-radius: 10px 0px 0px 10px;
+  border-color: darkgray;
 }
 
 #addButton {
   padding: 5px;
   border-radius: 0px 10px 10px 0px;
   background-color: orange;
+  border-color: darkgray;
   -webkit-appearance: none;
 }
 
@@ -84,6 +86,7 @@ html, body {
   border-radius: 10px;
   width: 200px;
   background-color: lightgreen;
+  border-color: darkgray;
 }
 
 #makeChoiceButton:disabled {
